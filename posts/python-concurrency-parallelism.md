@@ -20,14 +20,14 @@ for i in range(10):
 ```
 
 ## 使用 concurrency.futuresm 模块启动多线程/进程
- ```python
- from concurrent.futures import ThreadPoolExecutor
- from concurrent.futures import ProcessPoolExecutor # Windows 系统下不能用
+```python
+from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ProcessPoolExecutor # Windows 系统下不能用
 
- pool = ThreadPoolExecutor(max_worker=2)
- #pool = ProcessPoolExecutor(max_worker=2)
- result = list(pool.map(func, arg)) # 使用map方法简化代码
- ```
+pool = ThreadPoolExecutor(max_worker=2)
+#pool = ProcessPoolExecutor(max_worker=2)
+result = list(pool.map(func, arg)) # 使用map方法简化代码
+```
 
 ## 使用 multprocessing.Pool 模块启动多线程/进程
 ```python

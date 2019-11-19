@@ -2,32 +2,25 @@
 
 Tags: `<CentOS>`
 
-1. 安装 ntp, ntpdate
+1. 安装 ntpdate
 ```shell
-$ yum install ntp ntpdate
+$ yum install ntpdate
 ```
 
-2. 设置 ntpd 为开机启动
+2. 设置 ntpdate 开机启动命令
 ```shell
-$ systemctl start ntpd
-$ systemctl enable ntpd
+$ vim /etc/rc.local
+
++ ntpdate ntp1.aliyun.com
 ```
 
-3. 修改 /etc/ntp.conf 文件
+3. 对 rc.local 授权
 ```shell
-$ vim /etc/ntpd.conf
-
-server ntp1.aliyun.com iburst
-server ntp2.aliyun.com iburst
-server ntp3.aliyun.com iburst
-server ntp4.aliyun.com iburst
-server ntp5.aliyun.com iburst
-server ntp6.aliyun.com iburst
-server ntp7.aliyun.com iburst
+$ chmod +x /etc/rc.local
 ```
 
-4. 重启 ntpd 服务
+4. 手动执行一次时间同步
 ```shell
-$ systemctl restart ntpd
+$ ntpdate ntp1.aliyun.com
 ```
 
