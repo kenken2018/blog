@@ -24,3 +24,12 @@ $ chmod +x /etc/rc.local
 $ ntpdate ntp1.aliyun.com
 ```
 
+不过这种方式还是出现了一个问题 😅，当我的 mac 休眠以后，虚拟机也跟着休眠，下次启动恢复快照的时候时间还是休眠那个时刻的。为了解决这个问题，可以将同步命令加入到 crontab 里面。
+
+```shell
+$ crontab -e
+
+# 每五分钟同步一次
+*/5 * * * * ntpdate ntp1.aliyun.com
+```
+
