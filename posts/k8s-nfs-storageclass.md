@@ -190,6 +190,8 @@ metadata:
 # 使用上面的自定义名称
 provisioner: nfs-provisioner
 parameters:
+  # archiveOnDelete 指定为 false 表示删除 PVC 后 PV 也会被删除。
+  # 如果想在 PVC 被删除后仍旧保留数据的，可指定为 true
   archiveOnDelete: "false"
 ```
 
@@ -201,7 +203,7 @@ nfs-storage   nfs-provisioner   23h
 ```
 
 ### 部署测试服务
-万事俱备，就差把我们需要持久化数据的服务跑起来了。
+万事俱备，就差把需要持久化数据的服务跑起来
 
 ```yaml
 # nfs-statefulset-app.yaml
@@ -311,7 +313,7 @@ NAME                                  STATUS   VOLUME                           
 persistentvolumeclaim/www-nfs-web-0   Bound    pvc-2dc1cd0a-6aaf-4c9d-b9ac-43be2c6afec1   1Gi        RWO            nfs-storage    12m
 ```
 
-没毛病，两个都在。最后一步，查看我们本地 /mnt 的数据是否也是存在
+没毛病，两个都在。最后一步，检验我们本地 /mnt 的数据是否也是存在
 ```shell
 [root@master mnt]# cd ~
 [root@master ~]# cd /mnt
