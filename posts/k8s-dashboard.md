@@ -1,4 +1,4 @@
-# k8s 访问 dashboard
+# Kubernetes 访问 dashboard
 
 Tags: `<k8s>` `<dashboard>` 
 

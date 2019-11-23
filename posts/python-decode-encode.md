@@ -1,4 +1,4 @@
-# Python 中的编码和解码
+# Python 的编码和解码
 
 Tags: `<python>`
 
@@ -7,7 +7,7 @@ Tags: `<python>`
 
 python3 中的 str 为 unicode 类型，bytes 是包含原始的 8 位值，在 python3 中 str 和 bytes 不会等价，即使是空字符串也不行
 
-### 函数接受 str 或 bytes，并总是返回 str 类型，**解码（码：二进制）**
+函数接受 str 或 bytes，并总是返回 str 类型，**解码（码：二进制）**
 ```python
 def to_str(bytes_or_str):
     if isinstance(bytes_or_str, bytes):
@@ -17,7 +17,7 @@ def to_str(bytes_or_str):
     return bytes_or_str
 ```
 
-### 函数接受 str 或 bytes，并总是返回 bytes 类型，**编码**
+函数接受 str 或 bytes，并总是返回 bytes 类型，**编码**
 ```python
 def to_bytes(bytes_or_str):
     if isinstance(bytes_or_str, str):

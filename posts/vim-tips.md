@@ -1,4 +1,4 @@
-# vim 实用技巧
+# Vim 实用技巧
 
 Tags: `<vim>`
 

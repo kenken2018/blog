@@ -1,4 +1,4 @@
-# k8s 中使用 nfs-storageclass 持久化数据
+# Kubernetes 中使用 nfs-storageclass 持久化数据
 
 Tags: `<nfs>` `<k8s>` `<storageclass>`
 

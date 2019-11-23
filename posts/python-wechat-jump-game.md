@@ -1,4 +1,4 @@
-#  教你用 Python 从零开始写出简易版跳一跳外挂
+# Python 从零开始写出简易版跳一跳外挂
 
 Tags: `<python>` `<wechat>`
 

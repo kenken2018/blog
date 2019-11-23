@@ -1,4 +1,4 @@
-#  Python 中两个神奇的装饰器
+# Python 两个神奇的装饰器
 
 Tags: `<python>` `<decorator>`
 

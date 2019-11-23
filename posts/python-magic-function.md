@@ -1,4 +1,4 @@
-#  Python 中的魔法方法
+# Python 魔法方法
 
 Tags: `<python>`
 
