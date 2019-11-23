@@ -110,7 +110,7 @@ $ vim /etc/hosts
 + 192.168.2.12 k8s.chenjiandongx.com
 ```
 
-使用 Token 访问 k8s.chenjiandongx.com
+使用 Token 访问 https://k8s.chenjiandongx.com:30467
 
 ![dashboard](https://user-images.githubusercontent.com/19553554/69475533-4a2a4480-0e09-11ea-8bfe-52478e17d551.png)
 

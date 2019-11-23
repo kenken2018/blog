@@ -1,6 +1,6 @@
-# k8s 中使用 nfs-stroageclass 持久化数据
+# k8s 中使用 nfs-storageclass 持久化数据
 
-Tags: `<nfs>` `<k8s>` `<stroageclass>`
+Tags: `<nfs>` `<k8s>` `<storageclass>`
 
 在 Kubernetes 中有三种资源对象用来描述持久化存储，PresistentVloume(PV)/PresistentVolumeClaim(PVC)/StroageClass 
 
@@ -178,10 +178,10 @@ spec:
 nfs-client-provisioner   1/1     1            1           23h
 ``` 
 
-#### nfs-stroageclass
-接下来创建 nfs-stroageclass
+#### nfs-storageclass
+接下来创建 nfs-storageclass
 ```yaml
-# nfs-stroage.yaml
+# nfs-storage.yaml
 # kubectl apply -f nfs-storage.yaml
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
@@ -235,7 +235,7 @@ spec:
   - metadata:
       name: www
       annotations:
-        # 在这里声明使用我们刚才创建的 stroageclass
+        # 在这里声明使用我们刚才创建的 storageclass
         volume.beta.kubernetes.io/storage-class: nfs-storage
     spec:
       accessModes: [ "ReadWriteOnce" ]
