@@ -1,4 +1,4 @@
-# chenjiandongx's blogs
+# chenjiandongx's blog
 
 > 在尝试了多种博客工具之后，我觉得还是要回归本真。博客应该要随心随性，易于编写和维护，所以决定使用比较有趣的方式来实现。
 
