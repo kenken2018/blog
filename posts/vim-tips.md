@@ -14,7 +14,7 @@ Tags: `<vim>`
 vnoremap // y/<c-r>"<cr>
 ```
 
-#### vim 中多行编辑技巧
+### vim 中多行编辑技巧
 
 1. 多行追加，`<Ctr>+v` ->  `<Shift>+I` -> edit -> `double <Esc>`
 2. 多行替换，`<Ctr>+v` ->  `c` -> edit -> `double <Esc>`
