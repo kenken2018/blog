@@ -2,6 +2,8 @@
 
 Tags: `<k8s>` `<ipvs>`
 
+Kubernetes 默认的 kube-proxy 模式为 iptables，但是 iptables 有时候会出现一些问题，比如 clusterip 不能相互 ping 通。所以决定把模式从 iptables 切换为 ipvs。
+
 1. 查看 kube-proxy 信息
 ```shell
 $ kubectl get pods -n kube-system -o wide | grep proxy

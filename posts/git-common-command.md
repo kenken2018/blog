@@ -5,7 +5,7 @@ Tags: `<git>`
 ## 基本命令
 ```shell
 git add file_name                                     # 向暂存区添加文件
-git branch                                            # 查看目前git仓库中已有的分支
+git branch                                            # 查看目前 git 仓库中已有的分支
 git branch new_branch_name                            # 创建分支，无分支起点默认在当前提交上创建分支
 git branch -d branch_name                             # 删除分支
 git branch -D branch_name                             # 强制删除分支
