@@ -14,7 +14,8 @@ def extract_title(file: str) -> str:
 
 for _, _, files in os.walk(BASE_DIR):
     for file in files:
-        extract_title(file)
+        if not file.startswith("."):
+            extract_title(file)
 
 
 pairs = [(post[0], post[1]) for post in posts]

@@ -1,6 +1,6 @@
 # Vim 实用技巧
 
-Tags: `<vim>`
+Tags: `<vim>` `<tips>`
 
 ### vim 中搜索选中内容
 

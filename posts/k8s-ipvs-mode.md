@@ -1,4 +1,4 @@
-# Kubernetes 修改 kube-porxy ipvs 规则
+# Kubernetes 修改 kube-porxy ipvs 模式
 
 Tags: `<k8s>` `<ipvs>`
 
