@@ -19,6 +19,7 @@
 * [Kubernetes 访问 dashboard](./posts/k8s-dashboard.md)
 * [Kubernetes 修改 kube-porxy ipvs 模式](./posts/k8s-ipvs-mode.md)
 * [Kubernetes 中使用 nfs-storageclass 持久化数据](./posts/k8s-nfs-storageclass.md)
+* [kubernetes 之 Ingress 资源](./posts/k8s-resource-ingress.md)
 * [Kubernetes Tips](./posts/k8s-tips.md)
 * [Python 并行与并发](./posts/python-concurrency-parallelism.md)
 * [Python 的编码和解码](./posts/python-decode-encode.md)
