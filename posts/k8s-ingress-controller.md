@@ -1,4 +1,4 @@
-# kubernetes 之 Ingress 资源
+# kubernetes 之 Ingress-Controller
 
 Tags: `<k8s>` `<ingress>`
 
