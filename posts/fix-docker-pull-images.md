@@ -21,6 +21,6 @@ Environment="NO_PROXY=127.0.0.0/8,192.168.2.0/24"
 
 3. 同步镜像到其他节点
 ```shell
-$ docker save image-name:tag | bzip2 | pv | ssh other-node “cat | docker load”
+$ docker save image-name:tag | bzip2 | pv | ssh other-node "docker load"
 ```
 
